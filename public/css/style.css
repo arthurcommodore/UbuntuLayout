@@ -18,9 +18,10 @@ body, html {
 
 #cabecalho {
     width: 100%;
-    height: 180px;
+    height: 200x;
     background-color: rgb(48, 47, 47);
     box-shadow: 1px 2px 1px gray;
+    padding-bottom: 20px;
 }
 
 #buttonsWindow {
@@ -180,6 +181,7 @@ body, html {
 
 #containerStar {
     background-color: #FFFFFF;
+   
 }
 
 #star {
@@ -189,7 +191,7 @@ body, html {
 #restLayout {
     display: flex;
     width: 100%;
-    flex-grow: 1;
+    flex-grow: 0;
     flex-basis: auto;
     background-color: rgb(221, 210, 210);
     
@@ -217,8 +219,7 @@ body, html {
     margin-left: 10px;
 }
 
-#new {
-    
+#new {   
     background-color: rgb(230, 218, 218);
     margin-left: 2rem;
     margin-right: 2rem;
@@ -239,9 +240,41 @@ body, html {
 .newApp {
     height: 5rem;
     width: 10rem;
-    background-color: #1BBD18;
+    background-color: rgb(226, 216, 216);
     margin-left: 15px;
     margin-top: 15px;
+}
+
+.packageIcon {
+    height: 2rem;
+    margin-top: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.namePackage {
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 5px;
+    color:black;
+
+}
+
+.categoriaPackage {
+    display: block;
+    font-size: 0.8rem;
+    position: relative;
+    left: 55px;
+    bottom: 10px;
+    color:rgb(88, 85, 85)
+    
+}
+
+#titleRated {
+    display: block;
+    margin-left: 10px;
+    margin: 0;
 }
 
 
@@ -253,5 +286,18 @@ body, html {
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+.groupTopRated {
+    display: flex;
+    margin-left: 10px;
+}
+
+.topRated {
+    height: 5rem;
+    width: 10rem;
+    background-color: rgb(226, 216, 216);
+    margin-left: 20px;
 
 }

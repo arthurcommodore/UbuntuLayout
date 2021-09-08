@@ -106,4 +106,4 @@ dist
 #Azure
 .github
 .deployment
-.vscode/
+.vscode

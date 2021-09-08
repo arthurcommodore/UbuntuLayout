@@ -4,134 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>My prototype Ubuntu Software</title>
+    <link rel="stylesheet" href="../css/styleIndex.css">
+    <link rel="stylesheet" href="../css/styleAllSoftware.css">
+    <link rel="stylesheet" href="../css/styleMostInstalled.css">
+    <script src="../src/controllerMenu.js" async></script>
     <script src="../src/app.js" async></script>
 </head>
 <body>
-    <div id="site">
-        <header id="cabecalho">
-            <div id="buttonsWindow">
-                <button id="red" class="buttonWindow"></button>
-                <button id="yellow" class="buttonWindow"></button>
-                <button id="green" class="buttonWindow"></button>
-                <span id="nameSoftware">Ubuntu Software Center</span>
+    <header id="cabecalho">
+        <div id="buttonsWindow">
+            <button id="red" class="buttonWindow"></button>
+            <button id="yellow" class="buttonWindow"></button>
+            <button id="green" class="buttonWindow"></button>
+            <span id="nameSoftware">Ubuntu Software Center</span>
+        </div>
+        <div id="menu">
+            <div id="controlsSession">
+                <button id="back" class="controlSession">&#8249;</a>
+                <button id="next" class="controlSession">&#8250;</a>
             </div>
-            <div id="menu">
-                <div id="controlsSession">
-                    <a id="back" class="controlSession">&#8249;</a>
-                    <a id="next" class="controlSession">&#8250;</a>
-                </div>
+            
+            <div id="selectAllSoftware">
+                <img id="box" src="../img/abra-a-caixa-de-papelao.png " alt="">
+                <a href="./allSoftware.html" id="nameMenu">All software</a>
+            </div>
+            <div class="barra">
+                <img class="downArrow" id="downArrowAll" src="../img/down-arrow.png" alt="">
+            </div>
 
-                <div id="allSoftware">
-                    <img id="box" src="../img/abra-a-caixa-de-papelao.png" alt="">
-                    <span id="nameMenu">All software</span>
-                </div>
-                <div class="barra">
-                    <img id="downArrow" src="../img/down-arrow.png" alt="">
-                </div>
-                <ul id="menuCategorias">
-                    <li class="nameCategoria"><a id="categoriaAll" href="#">5 Most Installed </a></li>
-                    <li class="nameCategoria"><a id ="categoriaAll" href="#">Essential programs in everyday life</a></li>
-                    <li class="nameCategoria"><a id="categoriaAll" href="#">package managers</a></li>
-                    <li class="nameCategoria"><a id="categoriaAll" href="#">dependencies</a></li>
-                </ul>
+            <ul id="menuSoftware">
+                <li class="nameCategoria"><a id="categoriaAll" href="./mostInstalled.html">5 Most Installed </a></li>
+                <li class="nameCategoria"><a id ="categoriaAll" href="./essential.html">Essential programs in everyday life</a></li>
+                <li class="nameCategoria"><a id="categoriaAll" href="./manager.html">package managers</a></li>
+                <li class="nameCategoria"><a id="categoriaAll" href="./depedencies.html">dependencies</a></li>
+            </ul>
+
+            <div id="Installed">
+                <img id="pcIcon" src="../img/monitor.png" alt="">
+                <a id="nameInstalled" href="./installed.html">Installed</a>
             </div>
-        </header>
-        <div id="containerStar">
-            <img id="star" src="../img/OurStarApps.jpg" alt="">
+            <div class="barra">
+                <img class="downArrow" id="downArrowInstalled" src="../img/down-arrow.png" alt="">
+            </div>
+
+            <ul id="menuInstalled">
+                <li class="nameCategoria"><a id="categoriaAll" href="./recentInstalled.html">Recent Installed</a></li>
+                <li class="nameCategoria"><a id ="categoriaAll" href="./allInstalled.html">All Installed</a></li>
+            </ul>     
         </div>
-        <div id="restLayout">
-            <div id="acessories">
-                <h1 id="titleAcessories">Acessories</h1>
-                <p class="acessoriesItem">Books & Magazines</p>
-                <p class="acessoriesItem">Developer Tools</p>
-                <p class="acessoriesItem">Education</p>
-                <p class="acessoriesItem">Fonts</p>
-                <p class="acessoriesItem">Games</p>
-                <p class="acessoriesItem">Graphics</p>
-                <p class="acessoriesItem">Internet</p>
-                <p class="acessoriesItem">Office</p>
-                <p class="acessoriesItem">Science & Engineering</p>
-                <p class="acessoriesItem">Sound & Video</p>
-                <p class="acessoriesItem">System</p>
-                <p class="acessoriesItem">Themes & Tweaks</p>
-                <p class="acessoriesItem">Universal Acess</p>
-            </div>
-            <div id="new">
-                <p id="titleNew">What´s new ?</p>
-                <div class="groupNewApp">
-                    <div class="newApp">
-                        <img class="packageIcon" src="../img/package.png" alt="">
-                        <span class="namePackage">Unzip</span>
-                        <span class="categoriaPackage">Acessories</span>
-                    </div>
-                    <div class="newApp">
-                        <img class="packageIcon" src="../img/package.png" alt="">
-                        <span class="namePackage">Gimp</span>
-                        <span class="categoriaPackage">Office</span>
-                    </div>
-                    <div class="newApp">
-                        <img class="packageIcon" src="../img/package.png" alt="">
-                        <span class="namePackage">VLC</span>
-                        <span class="categoriaPackage">Sound & Video</span>
-                    </div>
-                    <div class="newApp">
-                        <img class="packageIcon" src="../img/package.png" alt="">
-                        <span class="namePackage">Flappy Bird</span>
-                        <span class="categoriaPackage">Games</span>
-                    </div>
-                    <div class="newApp">
-                        <img class="packageIcon" src="../img/package.png" alt="">
-                        <span class="namePackage">Atom</span>
-                        <span class="categoriaPackage">Develper Tools</span>
-                    </div> 
+    </header>   
+    <div id="containerStar">
+        <img id="star" src="../img/ubuntuVertical.jpg" alt="">
+    </div>
+    <div id="content">
+        <div id="new">
+            <p id="titleNew">What´s new ?</p>
+            <div class="groupNewApp">
+                <div class="newApp">
+                    <img class="packageIcon" src="../img/package.png" alt="">
+                    <span class="namePackage">Unzip</span>
+                    <span class="categoriaPackage">Acessories</span>
+                </div>
+                <div class="newApp">
+                    <img class="packageIcon" src="../img/package.png" alt="">
+                    <span class="namePackage">Gimp</span>
+                    <span class="categoriaPackage">Office</span>
+                </div>
+                <div class="newApp">
+                    <img class="packageIcon" src="../img/package.png" alt="">
+                    <span class="namePackage">VLC</span>
+                    <span class="categoriaPackage">Sound & Video</span>
+                </div>
+                <div class="newApp">
+                    <img class="packageIcon" src="../img/package.png" alt="">
+                    <span class="namePackage">Flappy Bird</span>
+                    <span class="categoriaPackage">Games</span>
+                </div>
+                <div class="newApp">
+                    <img class="packageIcon" src="../img/package.png" alt="">
+                    <span class="namePackage">Atom</span>
+                    <span class="categoriaPackage">Develper Tools</span>
                 </div> 
-                <div class="groupNewApp">
-                    <div class="newApp">
-                        <img class="packageIcon" src="../img/package.png" alt="">
-                        <span class="namePackage">mc-installer</span>
-                        <span class="categoriaPackage">Games</span>
-                    </div>
-                    <div class="newApp">
-                        <img class="packageIcon" src="../img/package.png" alt="">
-                        <span class="namePackage">Vs Code</span>
-                        <span class="categoriaPackage">Developer Tools</span>
-                    </div>
-                    <div class="newApp">
-                        <img class="packageIcon" src="../img/package.png" alt="">
-                        <span class="namePackage">VIM-Easy</span>
-                        <span class="categoriaPackage">Developer Tools</span>
-                    </div>
-                    <div class="newApp">
-                        <img class="packageIcon" src="../img/package.png" alt="">
-                        <span class="namePackage">MACOSX</span>
-                        <span class="categoriaPackage">Themes & Tweaks</span>
-                    </div> 
+            </div> 
+            <div class="groupNewApp">
+                <div class="newApp">
+                    <img class="packageIcon" src="../img/package.png" alt="">
+                    <span class="namePackage">mc-installer</span>
+                    <span class="categoriaPackage">Games</span>
+                </div>
+                <div class="newApp">
+                    <img class="packageIcon" src="../img/package.png" alt="">
+                    <span class="namePackage">Vs Code</span>
+                    <span class="categoriaPackage">Developer Tools</span>
+                </div>
+                <div class="newApp">
+                    <img class="packageIcon" src="../img/package.png" alt="">
+                    <span class="namePackage">VIM-Easy</span>
+                    <span class="categoriaPackage">Developer Tools</span>
+                </div>
+                <div class="newApp">
+                    <img class="packageIcon" src="../img/package.png" alt="">
+                    <span class="namePackage">MACOSX</span>
+                    <span class="categoriaPackage">Themes & Tweaks</span>
                 </div> 
+            </div> 
+        </div>
+
+      
+     
+    </div>
+    <div id="topRated">
+        <p id="titleRated">Top Rated</p>
+        <div class="groupTopRated">
+            <div class="topRated">
+                <img class="packageIcon" src="../img/package.png" alt="">
+                <span class="namePackage">VIM-Easy</span>
+                <span class="categoriaPackage">Developer Tools</span>
+            </div>
+            <div class="topRated">
+                <img class="packageIcon" src="../img/package.png" alt="">
+                <span class="namePackage">VIM-Easy</span>
+                <span class="categoriaPackage">Developer Tools</span>
+            </div>
+            <div class="topRated">
+                <img class="packageIcon" src="../img/package.png" alt="">
+                <span class="namePackage">VIM-Easy</span>
+                <span class="categoriaPackage">Developer Tools</span>
             </div>
         </div>
-        <div id="topRated">
-            <p id="titleRated">Top Rated</p>
-            <div class="groupTopRated">
-                <div class="topRated">
-                    <img class="packageIcon" src="../img/package.png" alt="">
-                    <span class="namePackage">VIM-Easy</span>
-                    <span class="categoriaPackage">Developer Tools</span>
-                </div>
-                <div class="topRated">
-                    <img class="packageIcon" src="../img/package.png" alt="">
-                    <span class="namePackage">VIM-Easy</span>
-                    <span class="categoriaPackage">Developer Tools</span>
-                </div>
-                <div class="topRated">
-                    <img class="packageIcon" src="../img/package.png" alt="">
-                    <span class="namePackage">VIM-Easy</span>
-                    <span class="categoriaPackage">Developer Tools</span>
-                </div>
-            </div>
-        </div>
-        
     </div>
 </body>
 </html>

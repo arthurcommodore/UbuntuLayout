@@ -2,18 +2,16 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgb(221, 210, 210);
+   
+    background-color: #E8E8DB;
 }
 
 
-#site {
+#content {
     display: flex;
+    height: 100%;
     flex-direction: column;
-    height: 100vh;
-    height: 60rem;
     margin: 0;
-    padding: 0;
 }
 
 #cabecalho {
@@ -107,6 +105,10 @@ body, html {
   color: black;
 }
 
+#next {
+    margin-left: 5px;
+}
+
 #box {
     margin-top: 1.6rem;
     margin-left: 20px;
@@ -116,9 +118,35 @@ body, html {
     width: 2.2rem;
 }
 
-#allSoftware {
+
+
+#pcIcon {
+    margin-top: 1.6rem;
+    margin-left: 30px;
+    margin-right: 40px;
+    display: inline;
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+#selectAllSoftware {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+}
+
+#selectAllSoftware:hover #nameMenu {
+    color: #ddd;
+}
+
+
+#Installed {
+    display: flex;
+    flex-direction: column;
+}
+
+#Installed:hover #nameInstalled {
+    color: #ddd;
 }
 
 .barra {
@@ -136,15 +164,54 @@ body, html {
 #nameMenu {
     color: white;
     font-size: 0.8rem;
+    text-decoration: none;
 }
 
-#menuCategorias {
+#nameMenu:hover {
+    color: rgb(216, 210, 210);
+}
+
+#nameInstalled {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+#menuSoftware{
     display: none;
+    position: absolute;
+    left: 200px;
     height: 8rem;
+    width: 8rem;
     padding: 20px;
     padding-bottom: 100px;
     background-color: rgb(88, 85, 85);
     border: 1px solid gray;
+}
+
+#menuSoftware:hover {
+    -webkit-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    transform: scale(1.09);
+}
+
+#menuInstalled {
+    display: none;
+    position: absolute;
+    left: 350px;
+    height: 8rem;
+    width: 8rem;
+    padding: 20px;
+    padding-bottom: 100px;
+    background-color: rgb(88, 85, 85);
+    border: 1px solid gray;
+}
+
+#menuInstalled:hover {
+    -webkit-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    transform: scale(1.09);
 }
 
 .nameCategoria {    
@@ -152,6 +219,86 @@ body, html {
     margin-bottom: 10px;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    transition: all 1s;
+   
+}
+
+#new {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #E6DADA;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 5rem;
+    width: 90%;
+    height: 25rem;
+    box-shadow: 1px 2px 2px 2px rgb(133, 132, 132);
+}
+
+
+#titleNew {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    display: block;
+    margin-left: 10px;
+}
+
+.groupNewApp {
+    display: flex;
+}
+
+.newApp {
+    height: 5rem;
+    width: 11rem;
+    background-color: #E2D8D8;
+    padding: 5px;
+    margin-left: 25px;
+    margin-top: 15px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(190, 189, 189);
+    cursor: pointer;
+}
+
+.newApp:hover {
+    background-color: #cfc5c5;
+}
+
+.packageIcon {
+    height: 2rem;
+    margin-top: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.namePackage {
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 5px;
+    color:black;
+
+}
+
+.categoriaPackage {
+    display: block;
+    font-size: 0.7rem;
+    position: relative;
+    left: 55px;
+    bottom: 10px;
+    color:rgb(88, 85, 85)
+    
+}
+
+.pre-animation {
+    display: flex;
+    opacity: 0;
+    max-height: 0;
+}
 
 #categoriaAll {
     text-decoration: none;
@@ -166,13 +313,13 @@ body, html {
     color: white;
 }
 
-#downArrow {
+.downArrow {
     height: 0.6rem;
     width: 0.6rem;
     margin-left: 0.6rem;
 }
 
-#downArrow:hover {
+.downArrow:hover {
     background-color: gray;    
     padding: 0.2rem;
     margin-left: 0.5rem;
@@ -180,112 +327,43 @@ body, html {
 }
 
 #containerStar {
+    margin: 0;
+    padding: 0;
     background-color: #FFFFFF;
+    border: 2px 0px 2px 2px solid #D6346D;
    
 }
 
 #star {
-    margin-top: 5px;
-}
-
-#restLayout {
-    display: flex;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    flex-grow: 0;
-    flex-basis: auto;
-    background-color: rgb(221, 210, 210);
-    
-}
-
-#acessories {
-    background-color: rgb(230, 218, 218);
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    box-shadow: 1px 1px 1px 0px rgb(110, 110, 110);
-    border-radius: 10px;
-    width: 14rem;
-    flex-grow: 0;
-}
-
-#titleAcessories {
-    font-size: 1.1rem;
-    color: rgb(107, 106, 106);
-    margin-left: 10px;
-}
-
-.acessoriesItem {
-    color: rgb(107, 106, 106);
-    margin-left: 10px;
-}
-
-#new {   
-    background-color: rgb(230, 218, 218);
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 5rem;
-    width: 90%;
-    height: 19rem;
-}
-
-#titleNew {
-    display: block;
-    margin-left: 10px;
-}
-
-.groupNewApp {
-    display: flex;
-}
-
-.newApp {
-    height: 5rem;
-    width: 10rem;
-    background-color: rgb(226, 216, 216);
-    margin-left: 15px;
-    margin-top: 15px;
-}
-
-.packageIcon {
-    height: 2rem;
-    margin-top: 1.2rem;
-    margin-left: 0.5rem;
-}
-
-.namePackage {
-    display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    vertical-align: top;
-    margin-top: 20px;
-    margin-left: 5px;
-    color:black;
-
-}
-
-.categoriaPackage {
-    display: block;
-    font-size: 0.8rem;
-    position: relative;
-    left: 55px;
-    bottom: 10px;
-    color:rgb(88, 85, 85)
+    height: 12rem;
     
 }
 
 #titleRated {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
     display: block;
-    margin-left: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 
 #topRated {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(230, 218, 218);
-    box-shadow:  2px 1px 2px 0px  rgb(110, 110, 110);
+    box-shadow: 1px 2px 2px 2px rgb(133, 132, 132);
     height: 8em;
     width: 96%;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
     padding-bottom: 20px;
 
 }
@@ -299,5 +377,9 @@ body, html {
     width: 10rem;
     background-color: rgb(226, 216, 216);
     margin-left: 20px;
+    cursor: pointer;
+}
 
+.topRated:hover {
+    background-color: #cfc5c5;
 }
